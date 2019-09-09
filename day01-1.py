@@ -57,18 +57,8 @@
 #8.求和
 num = int(input("Enter a number between 0 and 1000:"))
 sum=0
-if num>=0 and num<10:
-    a=num%10
-    sum=a
-    print('The sum of the digits is %d'%sum)
-if num>=10 and num <=99 :
-    b=num//10%10
-    a=num%10 
-    sum=a+b
-    print('The sum of the digits is %d'%sum)
-if num>=100 and num <=999 :
-    b=num//100%10
-    c=num//10%10
-    a=num%10
-    sum=a+b+c
-    print('The sum of the digits is %d'%sum)
+b=num//100%10
+c=num//10%10
+a=num%10
+sum=a+b+c
+print('The sum of the digits is %d'%sum)
