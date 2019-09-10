@@ -1,20 +1,3 @@
-#email = 'qwe@163.com'
-#for e in email :
- #   o=ord(e) - 10
- #   print(chr(o),end="")
-#md5加密
-#import hashlib
-#md = hashlib.md5()#构造一个md5
-#md.update('qwe@163.com'.encode())
-#print(md.hexdigest())
-
-#判断是否为闰年
-#year = int(input('请输入年份'))
-#if year % 400 == 0 or year % 4 == 0 and year % 100 != 0:
-#    print('是闰年')
-#else:
-#    print('不是闰年')
-
 #1.温度转换
 #C = float(input('请输入一个温度'))
 #print((9/5)*C+32)
