@@ -1,121 +1,3 @@
-#1.函数，奇偶数
-# def zm(num):
-#     if num%2==0:
-#         print("偶数 %d"%num)
-#     else:
-#         print('奇数 %d'%num)
-# zm(2)
-# zm(5)
-#2.函数，素数
-# def ybr(num):
-#     for i in range(2,num):
-#         if num % i == 0:  
-#             print('%d不是素数'%num) 
-#             break
-#     else:
-#         print('%d是素数'%num)
-# ybr(9)
-# ybr(11)
-#3.函数，验证码
-# import random
-# def zybrm() :
-#     yzm = random.randrange(1000,9999)
-#     #res = int(input('验证码是：%d,请输入：'%yzm))
-#     print(yzm)
-#     res = int(input('请输入验证码：'))
-#     if res == yzm :
-#         print('验证码正确')
-#     else :
-#         print('验证码错误')
-# zybrm()
-# import numpy as np
-# def yzbmr():
-#     for i in range(4):
-#         yzm = np.random.choice(['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','g','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'])
-#         print(yzm,end="")
-# yzbmr()
-#4.函数，登陆0
-# count = 1
-# import random
-# def zmybr():
-#     global count
-#     username = input('请输入账号：')
-#     password = input('请输入密码：')
-#     yzm = random.randrange(1000,9999)
-#     res = int(input('验证码是：%d,请输入：'%yzm))
-#     if yzm == res :
-#         if username=='abc':
-#             if password=='123' :
-#                 print('登陆成功')
-#             else:
-#                 print('登陆失败')
-#         else:
-#             print('用户名错误')
-#             if count != 3:
-#                 count +=1
-#                 zmybr()
-#             else:
-#                 print('尝试次数达到上限')
-#     else:
-#         print('验证码错误')
-# zmybr()
-#5.函数，登陆1
-# import numpy as np
-# ORIGINAL_USERNAME = 'admin'
-# ORIGINAL_PASSWORD = '123'
-# LOGINCOUNT=1
-# def Check(username, password):
-#     # 当函数体内需要改变外部变量的时候我们才需要global,但是统一起见都写上
-#     global ORIGINAL_USERNAME, ORIGINAL_PASSWORD,LOGINCOUNT
-#     if username == ORIGINAL_USERNAME and password == ORIGINAL_PASSWORD:
-#         print('登录成功')
-#     else:
-#         print('登录失败')
-#         if LOGINCOUNT != 3:
-#             LOGINCOUNT +=1
-#             Login()
-#         else:
-#             print('尝试次数达到上限')
-        
-# def Login():
-#     username = input('请输入账号:>>')
-#     password = input('请输入密码:>>')
-#     V_res = Verify()
-#     if V_res == True:
-#         Check(username, password)
-#     else:
-#         for _ in range(4):
-#             V_res = Verify()
-#             if V_res:
-#                 Check(username, password)
-#                 break
-#         else:
-#             print('验证码错误次数过多,怀疑你是一个机器人.')
-
-# def Verify():
-#     """
-#     生成验证码
-#     """
-#     word = ""
-#     word_list = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'q', 'w', 'e', 'r',
-#                 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k',
-#                 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm']
-#     for _ in range(4):
-#         word += np.random.choice(word_list)
-#     user_word = input('请输入验证码%s:>>'%word)
-#     if user_word == word:
-#         return True
-#     else:
-#         return False
-
-# def API():
-#     pass
-
-# def Start():
-#     Login()
-
-# if __name__ == "__main__":
-#     Start()
 #五角数
 # count = 0
 # def getPentagonalNumber(n):
@@ -229,7 +111,7 @@
 # def times():
 #     print ("Current date and time is %s"%time.asctime(time.localtime(time.time())))
 # times()
-#投骰子
+#投骰子----------------------------------------------------------------------------------------------------
 # import random
 # ds=random.randint(1,6)
 # ds1=random.randint(1,6)
@@ -249,3 +131,4 @@
 #             print(ds+ds1)
 #             print('You lose')       
 # touzi()
+#----------------------------------------------------------------------------------------------------------
