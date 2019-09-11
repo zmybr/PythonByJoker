@@ -1,89 +1,3 @@
-#用户登陆
-# username = str (input('请输入用户名'))
-# password = str (input('请输入密码'))
-# if (username=='abc'):
-#     if (password=='123') :
-#         print('登陆成功')
-#     else:
-#         print('登陆失败')
-# else:
-#     print('用户名错误')
-#判断成绩
-# cj = float (input('请输入一个成绩:'))
-# if cj<60:
-#     print('不及格')
-# elif cj>=60 and cj<70:
-#     print('及格')
-# elif cj>=70 and cj<80:
-#     print('良好')
-# elif cj>=80 and cj<=100:
-#     print('优秀')
-# else:
-#     print('输入的成绩不合法')
-#分段函数
-# x = float(input('请输入一个值：'))
-# if x>1:
-#     print(3 * x - 5)
-# elif -1<=x<=1:
-#     print(x+2)
-# else :
-#     print(5*x+3)
-#计算器
-# num1 = float(input('请输入第一个值：'))
-# num2 = float(input('请输入第一个值：'))
-# char = str(input('请输入运算符：'))
-# if char=='+':
-#     print('%.2f  %s %.2f = %.2f'%(num1,char,num2,num1+num2))
-# elif char=='-':
-#     print('%.2f  %s %.2f= %.2f'%(num1,char,num2,num1-num2))
-# elif char=='*':
-#     print('%.2f  %s %.2f= %.2f'%(num1,char,num2,num1*num2))
-# elif char=='/':
-#     print('%.2f %s  %.2f= %.2f'%(num1,char,num2,num1/num2))
-# else:
-#     print('输入的运算符不合法')
-#石头，剪刀，布
-# import numpy as np
-# play= np.random.choice(['剪刀','石头','布'])
-# player= str(input("请输入[剪刀，石头，或布]"))
-# print(play)
-# if play==player:
-#     print("平局")
-# elif play=="剪刀" and player=="石头":
-#     print('你赢了')
-# elif play=="剪刀" and player=="布":
-#     print('你输了')
-# elif play=="石头" and player=="布":
-#     print('你赢了')
-# elif play=="石头" and player=="剪刀":
-#     print('你输了')
-# elif play=="布" and player=="石头":
-#     print('你输了')
-# elif play=="布" and player=="剪刀":
-#     print('你赢了')
-# else:
-#     print('输入不合法')
-#判断回文数
-# num = str(input("请输入一个5位数"))
-# #num1=num[::-1]
-# #if num==num1
-# a=num[0]
-# b=num[1]
-# c=num[2]
-# d=num[3]
-# e=num[4]
-# if a==e and b==d:
-#     print('这是一个回文数')
-# else :
-#     print('这不是回文数')
-#音乐播放
-# import pygame
-# import time
-# pygame.mixer.init()
-# print("播放音乐")
-# track =pygame.mixer.music.load("D:\CloudMusic\张晓红 - 沧海一声笑.mp3")
-# time.sleep(3600)
-# pygame.mixer.music.play()
 #1.几何学:五边形面积
 # import math
 # sin = math.sin
@@ -141,50 +55,6 @@
 # print('  State Withholding(%.2f):%.2f'%(tax2,(pay * time * tax2)))
 # print('  Total Deduction:%.2f'%((pay * time * tax1)+(pay * time * tax2)))
 # print('Net Pay:$%.2f'%((pay * time)-((pay * time * tax1)+(pay * time * tax2))))
-#100内求和
-# _sum = 0
-# for i in range(1,101):
-#     _sum += i
-# print(_sum)
-#100内偶数，奇数求和
-# a=0
-# b=0
-# for i in range(101):
-#     if i%2==0:
-#         a +=i
-#     else:
-#         b +=i
-# print(a,b)
-#测试电脑性能
-# import time
-# start = time.time()
-# sum_=0
-# for i in range(1000000):
-#     sum_ +=i
-# end =time.time()
-# print(end - start)
-#九九乘法表
-# for i in range(1,10):
-#     for j in range(1,i + 1):
-#         print('%d * %d = %d'%(j,i,i*j),end="\t")
-#     print()
-# for i in range(9,0,-1):
-#     for j in range(i,0,-1):
-#         print('%d * %d = %d'%(j,i,i*j),end="\t")
-#     print()
-#判断素数
-# num = int(input('请输入一个数字：'))
-# for i in range(1,num):
-#     for j in range(2,i):
-#         if i % j==0 :
-#             break
-#     else :
-#         print(i)
-# a="abcdefg"
-# i=0
-# while i<len(a):
-#     print(a[i])
-#     i +=1
 #7.反向数字
 # num = str(input('Enter an integer:'))
 # num1 = num[::-1]
@@ -452,5 +322,3 @@ else:
 #         print(j,i)
 #         count +=1
 # print('The total number of all combinations is %d'%count)
-
-
